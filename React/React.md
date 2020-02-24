@@ -55,4 +55,40 @@ Browsers can only read JavaScript objects but JSX is not a regular JavaScript ob
 | Debugging | Compile time debugging | Runtime debugging |
 | Author | Facebook | Google |
 
+### 9. Stateful component (class component) VS Stateless component (functional component)
 
+| Stateful component (class component) | stateless component (functional component) |
+| ------------------------------------ | ------------------------------------------ |
+| Stores info about component's state change in memory | Calculates the internal state of the components |
+| Have authority to change state | Do not have authority to change state |
+| Contains the knowledge of past, current and possible future changes in state | Contains no knowledge of past, current and possible future changes in state |
+| Stateless components notify them about the requirement of the state change, then they send down the props to them | They receive the props from stateful components and treat them as callback functions |
+
+### 10. What are the different phases of React component's lifecycle?
+
+There are three different phases of React component's lifecycle:
+
+1. *Initial Rendering Phase:* This is the phase when the component is about to start its life journey and make its way to the DOM.
+
+2. *Updating Phase:* Once the component gets added to the DOM, it can potentially update and re-render only when a prop or state change occurs. That happens only in this phase.
+
+3. *Unmounting phase:* This is the final phase of a component's life cycle in which the component is destroyed and removed from the DOM.
+
+### 11. Explain the lifecycle methods of React components in detail.
+
+* Mounting
+  * **constructor()**
+  * static getDerivedStateFromProps()
+  * **render()**
+  * **componentDidMount()**
+
+* Updating
+  * static getDerivedStateFromProps()
+  * shouldComponentUpdate()
+  * **render()**
+  * getSnapshotBeforeUpdate()
+  * **componentDidUpdate()**
+
+### 12. What are Higher Order Components(HOC)?
+
+Higher Order Component is an advanced way of resuing the component logic. Basically, it's a pattern that is derived from React's compositional nature. HOC are custom components which wrap another component within it. They can accept any dynamically provided child component but they won't modify or copy any behavior from their input components. You can say that HOC are `pure` component.
