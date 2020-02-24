@@ -26,3 +26,12 @@
 * It can be difficult for the novice programmers to understand
 * Coding gets complex as it uses inline templating and JSX
 
+### 5. What is the difference between Real DOM and Virtual DOM.
+
+| Virual DOM | Real DOM |
+| ---------- | -------- |
+| It updates slow | It updates faster |
+| Can directly update HTML | Can't directly update the HTML |
+| Create a new DOM if element updates | Updates JSX if element updates |
+| DOM manipulations is very expensive | DOM manipulation is very easy |
+| Too much of memory wastage | No memory wastage |
