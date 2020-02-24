@@ -9,7 +9,7 @@
 ### 2. What are the features of React ?
 
 * It uses the **virtual DOM** instead of the real DOM.
-* It uses server-side rendering.
+* It uses **server-side rendering**.
 * it follows **uni-directional data flow** or **data binding**.
 
 ### 3. List some of the major advantages of React
@@ -35,3 +35,8 @@
 | Create a new DOM if element updates | Updates JSX if element updates |
 | DOM manipulations is very expensive | DOM manipulation is very easy |
 | Too much of memory wastage | No memory wastage |
+
+### 6. What is JSX?
+
+JSX is a XML-like syntax extension to ECMAScript (the acroym stands for JavaScript XML). This is a type of file used by React which utilizes the expressiveness of Javascript along with HTML like template syntax. This makes the HTML file really easy to understand. JSX syntax can be compiled by Babel.
+
