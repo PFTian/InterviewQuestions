@@ -129,4 +129,44 @@ Following are the cases when ref should be used:
 * To trigger imperative animations
 * Integrate with thrid-party DOM libraries.
 
+### 19. What is Redux?
 
+Redux is one of the hottest libraries for front-end development in today's marketplace. It is a predictable state container for JavaScript applications and is used for the entire applications state management. Applications developed with Redux are easy to test and can run in different environments showing consistent behavior.
+
+### 20. What are the three principles that Redux follows?
+
+1. **_Single source of thuth:_** The state of the entire application is stored in an object/state tree within a single store. The single state tree makes it easier to kepp track of changes over time and debug or inspect the application.
+
+2. **_State is read-only:_** The only way to change the state is to trigger an action. An action is a plain JS object describing the change. Just like state is the minimal representation of data, the action is the minimal representation of the change to that data.
+
+3. **_Changes are made with pure functions:_** In order to specify how the state tree is transformed by actions, you need pure functions. Pure functions are those whose return value depends solely on the values of their arguments.
+
+### 21. What do you understand by "Single source of truth"?
+
+Redux uses `Store` for storing the application's entire state at one place. So all the component's state are stored in the Store and they receive updates from the Store itself. the sigle state tree makes it easier to keep track of changes over time and debug or inspect the application.
+
+### 22. List down the components of Redux.
+
+Redux is composed of the following components:
+
+* **Action:** It's an object that describes what happened.
+* **Reducer:** It is a place to determine how the state will change.
+* **Store:** State/Object tree of the entire application is saved in the Store.
+* **view:** Simply displays the data provided by the Store.
+
+### 23. What are the advantages of Redux?
+Advantages of Redux are listed below:
+
+* **Predictability of outcome:** Since there is always one source of truth, i.e. the store, there is no confusion about how to sync the current state with actions and other parts of the application.
+
+* **Maintainablility:** The code becomes easier to maintain wih a predictable outcome and strict structure.
+
+* **Server-side rendering:** You just need to pass the store created on the server, to the client side. This is very useful for initial render and provides better user experience as it optimizes the application performance.
+
+* **Developer tools:** From actions to state changes, developers can track everything going onin the application in real time.
+
+* **Community and ecosystem:** Redux has a huge community behind it which makes it even more captivating to use. A large community of talented individuals contribute to the betterment of the library and develop various applications with it.
+
+* **Ease of testing:** Redux's code is mostly functions which are small, pure and isolated. This makes the code testable and independent.
+
+* **Organization:** redux is precise about how code should be organised, this makes the code more consistent and easier when a team works with it.
